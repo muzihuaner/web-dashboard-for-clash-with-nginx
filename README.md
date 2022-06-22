@@ -1,5 +1,6 @@
 # Clash Linux 网络管理面板
-Clash : [click me](https://github.com/Dreamacro/clash)
+Clash : [click me](https://github.com/Dreamacro/clash)  
+Clash Ubuntu部署方法 https://github.com/muzihuaner/clash-ubuntu-config
 
 ## 如何部署
 
