@@ -1,19 +1,16 @@
-# Web Dashboard using nginx for Clash For Linux
+# CLash Linux 网络管理面板
+Clash : [click me](https://github.com/Dreamacro/clash)
 
-Clash repo site: [click me](https://github.com/Dreamacro/clash)
+## 如何部署
 
-## How To Use It
-
-1. At first you should install nginx from your distribution's repository. For me, I'm using Arch Linux
+1. 在你的主机上部署nginx，我这里使用的是ubuntu
 
 ```bash
-sudo pacman -S nginx
+sudo apt-get install nginx
 ```
 
-2. Clone this repo and put these folders into your nginx's web sources folder
-   1. at.alicdn.com
-   2. clash.razord.top
-3. Add these two configuration file to your nginx's configuration
+2. Clone 本项目到你的WEB目录下
+3. 添加下面两个配置到你的nginx配置
 
 clash.conf
 
@@ -25,7 +22,7 @@ server {
         access_log              /var/log/nginx/clash.log;
         error_log               /var/log/nginx/clash.err;
     
-        root                    /path/to/your/clash.razord.top;
+        root                    /path/to/yourwebsite/;
         index                   index.html;
 }
 ```
@@ -40,11 +37,11 @@ server {
         access_log              /var/log/nginx/clash_font.log;
         error_log               /var/log/nginx/clash_font.err;
 
-        root                    /path/to/your/at.alicdn.com;
+        root                    /path/to/yourwebsite/at.alicdn.com;
         index                   index.html;
 }
 ```
 
-4. Reload nginx and check http://localhost:30000
+4. 重新启动nginx并访问 http://localhost:30000
 
 ![](img/rendering.png)
