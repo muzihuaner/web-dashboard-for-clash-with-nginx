@@ -1,4 +1,4 @@
-# CLash Linux 网络管理面板
+# Clash Linux 网络管理面板
 Clash : [click me](https://github.com/Dreamacro/clash)
 
 ## 如何部署
@@ -45,3 +45,6 @@ server {
 4. 重新启动nginx并访问 http://localhost:30000
 
 ![](img/rendering.png)
+
+
+代码来自  http://clash.razord.top/#/proxies
